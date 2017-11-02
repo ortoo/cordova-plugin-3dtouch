@@ -89,6 +89,8 @@ A value from a (case insensitive) fixed list of icons which have been provided b
 * iOS 9.0: Compose, Play, Pause, Add, Location, Search, Share
 * iOS 9.1 added these: Prohibit, Contact, Home, MarkLocation, Favorite, Love, Cloud, Invitation, Confirmation, Mail, Message, Date, Time, CapturePhoto, CaptureVideo, Task, TaskCompleted, Alarm, Bookmark, Shuffle, Audio, Update
 
+Preview icons in Apple's gallery [here](https://developer.apple.com/ios/human-interface-guidelines/graphics/system-icons/#quick-action-icons)
+
 ##### iconTemplate
 Can be used to provide your own icon. It must be a valid name of an icon template in your Assets catalog.
 
@@ -213,6 +215,8 @@ This is the same as the `type` param of `configureQuickActions`, so it's what yo
 `onHomeIconPressed` as `payload.type`. Just do something cool with that info.
 
 ## 6. Changelog
+* 1.3.6 Get back the subtitle when a home icon was pressed, thanks [#27](https://github.com/EddyVerbruggen/cordova-plugin-3dtouch/issues/27)!
+* 1.3.5 Home icons are now WKWebView compatible. Previously your app would crash. See [#12](https://github.com/EddyVerbruggen/cordova-plugin-3dtouch/issues/12).
 * 1.3.4 Increased the wait time for `onHomeIconPressed` from 5 to 15 secs. See [#4](https://github.com/EddyVerbruggen/cordova-plugin-3dtouch/issues/4).
 * 1.3.3 Compatibility of 'home icon cold-starts' with [Meteor](https://www.meteor.com), see [#4](https://github.com/EddyVerbruggen/cordova-plugin-3dtouch/issues/4).
 * 1.3.2 Compatibility with Cordova-iOS 4.
